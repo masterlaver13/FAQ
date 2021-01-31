@@ -1,0 +1,21 @@
+.answer {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/*
+#question1:target .answer {
+  max-height: 100px;
+}
+
+#question2: .answer {
+  max-height: 100px;
+}
+
+#question3:target .answer {
+  max-height: 300px;
+}
+
+#question4:target .answer {
+  max-height: 100px;
+} */
