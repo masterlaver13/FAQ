@@ -1,10 +1,12 @@
-import './App.css';
 import './style.css';
 import './faq.css';
 import React, { useState} from 'react';
 import Question from './question'
 
+
 function App() {
+
+  const [currIndex, setCurrIndex] = useState(0);
 
   const [questions, setQuestion] = useState([
     {
@@ -32,17 +34,18 @@ function App() {
   return (
 
     <div id="wrapper">
-    <div className="container">
       <h1>FAQ</h1>
 
-      <Question quest={questions[0]["question"]} answ={questions[0]["answer"]} />
-      <Question quest={questions[1]["question"]} answ={questions[1]["answer"]} />
-      <Question quest={questions[2]["question"]} answ={questions[2]["answer"]} />
-      <Question quest={questions[3]["question"]} answ={questions[3]["answer"]} />
-      <Question quest={questions[4]["question"]} answ={questions[4]["answer"]} />
 
-    </div>
+        <Question s={() =>{setCurrIndex(currIndex+1)}} question={questions[0]["question"]} answer={questions[0]["answer"]} />
+        <Question s={() =>{setCurrIndex(currIndex+1)}} question={questions[1]["question"]} answer={questions[1]["answer"]} />
+        <Question s={() =>{setCurrIndex(currIndex+1)}} question={questions[2]["question"]} answer={questions[2]["answer"]} />
+        <Question s={() =>{setCurrIndex(currIndex+1)}} question={questions[3]["question"]} answer={questions[3]["answer"]} />
+        <Question s={() =>{setCurrIndex(currIndex+1)}} question={questions[4]["question"]} answer={questions[4]["answer"]} />
+
   </div>
+
+
   );
 }
 

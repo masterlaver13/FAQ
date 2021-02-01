@@ -1,19 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
+import './style.css';
+import './faq.css';
 
-export default function Question({quest,answ}){
+export default function Question({question, answer}) {
 
-  console.log(quest);
+  const questionStyle = {};
+  const answerStyle = {};
 
-  return(
-    <div className="container">
-      <div id="question1">
-        <a href="#question1">{quest}</a>
-        <div className="answer">
-          <p>
-            {answ}
-          </p>
-        </div>
-      </div>
+  return (< div className = "container" > <div id="question">
+    <a href="#question1">{question}</a>
+    <div className="answer">
+      <p>
+        {answer}
+      </p>
     </div>
-  );
+  </div> < /div>
+);
+
 }

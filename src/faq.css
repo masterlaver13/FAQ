@@ -3,7 +3,6 @@
   overflow: hidden;
 }
 
-/*
 #question1:target .answer {
   max-height: 100px;
 }
@@ -13,9 +12,9 @@
 }
 
 #question3:target .answer {
-  max-height: 300px;
+  max-height: 100px;
 }
 
 #question4:target .answer {
   max-height: 100px;
-} */
+}
